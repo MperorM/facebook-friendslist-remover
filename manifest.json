@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "facebook friendslist sidebar remover",
+  "version": "1.0",
+
+  "description": "removes facebook friendslist in sidebar",
+
+  "icons": {
+    "48": "logo.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["facebookblock.js"]
+    }
+  ]
+
+}
